@@ -1,0 +1,7 @@
+
+
+.navBar li{
+    display: inline-block;
+    color: aqua;
+    margin: 5%;
+}
