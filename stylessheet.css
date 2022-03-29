@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 html{
-    background-color: white
+    
     font-family: 'Raleway',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 252, 178);;
+  }
 }
 h2{
     text-align: center;
@@ -10,18 +14,7 @@ h2{
 h3{
     text-align: center;
 }
-.navBar{
-    background-color:  #3A6B35;
-}
-.navBar li{
-    display: inline-block;
-    color: aqua;
-    margin: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    
-    
-}
+
 .logo1{
     width: 100%;
     height: 8rem;
@@ -38,46 +31,66 @@ h3{
     border-bottom-left-radius: 5%;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
-    padding-left: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-   
-    
-    
-    
 }
+
+
+
 
 .welcomeMessageSpacing img{
-    float: right;
+    float:right;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+    width: 40%;
     
 }
+}
+    
+}
+
+.citizen{
+  background-color: #CBD18F;
+  border-radius: 5%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 3%;
+}
+
+.titles{
+  background-color: #3A6B35;
+  border-radius: 5%;
+  padding: 2em;
+  color: rgb(252, 252, 178);
+  text-align: center;
+}
+
+.careServices{
+display: grid;
+gap: 1rem;
+align-items: center;
+
+font: 500 100%/1.5 system-ui;
+}
+
+
+.careServices p{
+    padding-left: 2%;
+    
+}
+
+
+
+
+.colums{
+  background-color: #CBD18F;   
+  display: inline-block;
   
-
-.introRow{
-    display: inline-flex;
-
 }
 
-
-
-
-
-.columContainer{
-    display: table; /* Make the container element behave like a table */
-    width: 100%;
-    background-color: #CBD18F;
-    float: left;
-    padding: auto;
-    
-}
 
 .colum{
-        float: left;
-        width: 33.33%;
-        overflow: scroll;
-        background-color: #CBD18F;
-        display: block;
-        
+
+    background: #CBD18F;
+    
     
 }
 
@@ -92,19 +105,21 @@ h3{
   
   /* Links inside the navbar */
   .navbar a {
-    float: left;
+    
     font-size: 16px;
-    color: white;
+    color: rgb(252, 252, 178);
     text-align: center;
-    padding: 14px 16px;
+    margin-left: 10px;
     text-decoration: none;
-    margin:2%
+    margin: 10px;
+    padding: auto;
+
     
   }
   
   /* The dropdown container */
   .dropdown {
-    float: left;
+    display: inline-flex;
     overflow: hidden;
     
     
@@ -115,11 +130,12 @@ h3{
     font-size: 16px; 
     border: none;
     outline: none;
-    color: white;
-    padding: 14px 16px;
+    color: rgb(252, 252, 178);
+    padding: 14px 14px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    
   }
   
   /* Add a red background color to navbar links on hover */
@@ -144,7 +160,7 @@ h3{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
   
   /* Add a grey background color to dropdown links on hover */
@@ -155,4 +171,23 @@ h3{
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+ 
+  .column {
+    float: left;
+    width: 33.33%;
+    background-color: #CBD18F;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+
+  .footer{
+      background-color: #CBD18F;
   }
